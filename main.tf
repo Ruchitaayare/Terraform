@@ -14,7 +14,7 @@ module "security_group" {
   ec2_jenkins_sg_name = "Allow port 8080 for jenkins"
 }
 
-module "jenkins" {
+/*module "jenkins" {
   source                    = "./jenkins"
   ami_id                    = var.ec2_ami_id
   instance_type             = "t2.medium"
@@ -65,4 +65,4 @@ module "aws_ceritification_manager" {
   source         = "./certificate-manager"
   domain_name    = "jenkins.jhooq.org"
   hosted_zone_id = module.hosted_zone.hosted_zone_id
-}
+}*/
